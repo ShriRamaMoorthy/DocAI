@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+venv/
+rag_env/
+vectorstore/
+data/uploaded_docs/
+.streamlit/secrets.toml
+*.egg-info/
+.DS_Store

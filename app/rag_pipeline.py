@@ -1,9 +1,9 @@
-import sys, os
+import os
+import sys
 sys.path.append(os.path.dirname(__file__))
 
-from pathlib import Path
-from dotenv import load_dotenv
-load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+from config import OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
@@ -31,7 +31,8 @@ def get_llm():
     return ChatOpenAI(
         model_name="gpt-3.5-turbo",
         temperature=0,
-        max_tokens=1000
+        max_tokens=1000,
+        api_key=OPENAI_API_KEY
     )
 
 

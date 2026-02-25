@@ -8,3 +8,5 @@ data/uploaded_docs/
 .streamlit/secrets.toml
 *.egg-info/
 .DS_Store
+app/config.py
+config.py

@@ -2,7 +2,7 @@
 An end-to-end RAG (Retrieval-Augmented Generation) application that lets you 
 upload document and chat with them using AI.
 ## 🚀 Live Demo
-[Coming soon — Streamlit Cloud]
+https://documentsai.streamlit.app/
 ## ⚙️ Tech Stack
 - **LangChain** — RAG pipeline & LLM orchestration
 - **ChromaDB** — Vector store for embeddings
@@ -46,3 +46,4 @@ DocAI/ <br>
 - Scaling it to handle multiple docs or PDFs
 - Suggested Questions
 - Highlighting Source in Document
+
